@@ -6,3 +6,8 @@ function Node(data){
   this.left = [];
   this.right = [];
 }
+
+function Tree(data){
+  var node = new Node(data);
+  this._root = node;
+}
