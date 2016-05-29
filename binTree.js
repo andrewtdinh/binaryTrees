@@ -16,10 +16,12 @@ function binaryTree(str){
   var binTree = {};
   var ptr = 0;
   var len = str.length;
-  if (len === 0){
-    return {}
+  function makeSubNode(aStr){
+    if (aStr === "")
   }
-  function makeSubNode(obj, aStr, data, left, right){
-    
+  if (len === 0){
+    return {};
+  } else {
+    return makeSubNode(str);
   }
 }
