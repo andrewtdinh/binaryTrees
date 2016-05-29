@@ -17,7 +17,13 @@ function binaryTree(str){
   var ptr = 0;
   var len = str.length;
   function makeSubNode(aStr){
-    if (aStr === "")
+    if (aStr.lenth === 1) {
+      return {
+        data: aStr.shift(),
+        left: null,
+        right: null
+      };
+    }
   }
   if (len === 0){
     return {};
