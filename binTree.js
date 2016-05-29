@@ -46,3 +46,5 @@ function binaryTree(str){
     return makeSubNode(str);
   }
 }
+
+console.log(binaryTree('character'));
