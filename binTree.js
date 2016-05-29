@@ -13,9 +13,9 @@ function Tree(data){
 }
 
 function binaryTree(str){
-  var binTree = {};
-  var ptr = 0;
-  var len = str.length;
+  // var binTree = {};
+  // var ptr = 0;
+  // var len = str.length;
   function makeSubNode(aStr){
     if (aStr.lenth === 1) {
       return {
@@ -23,6 +23,21 @@ function binaryTree(str){
         left: null,
         right: null
       };
+    } else {
+      var data = aStr.shift();
+      if (aStr[0].toLowerCase() > data.toLowerCase()){
+        return {
+          data: data,
+          left: null,
+          right: makeSubNode(aStr)
+        };
+      } else {
+        return {
+          data: data,
+          right: null,
+          left: makeSubNode(aStr)
+        }
+      }
     }
   }
   if (len === 0){
