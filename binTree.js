@@ -15,7 +15,7 @@ function Tree(data){
 function binaryTree(str){
   // var binTree = {};
   // var ptr = 0;
-  // var len = str.length;
+  var len = str.length;
   function makeSubNode(aStr){
     if (aStr.lenth === 1) {
       return {
