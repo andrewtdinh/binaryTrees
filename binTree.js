@@ -26,7 +26,8 @@ function binaryTree(str){
       };
     } else {
       var data = aStr.shift();
-      if (aStr[0].toLowerCase() > data.toLowerCase()){
+      console.log(aStr);
+      if (aStr[0] > data){
         return {
           data: data,
           left: null,
