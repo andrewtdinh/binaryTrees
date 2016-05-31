@@ -19,12 +19,12 @@ function binaryTree(str){
   function makeSubNode(aStr){
     if (aStr.lenth === 1) {
       return {
-        data: aStr.shift(),
+        data: aStr[0],
         left: null,
         right: null
       };
     } else {
-      var data = aStr.shift();
+      var data = aStr.split('').shift();
       if (aStr[0].toLowerCase() > data.toLowerCase()){
         return {
           data: data,
