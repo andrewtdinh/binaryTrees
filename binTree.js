@@ -27,13 +27,13 @@ function binaryTree(str){
     } else {
       var data = aStr.shift();
       // console.log(aStr);
-      if (aStr[0] > data){
+      if (aStr && aStr[0] > data){
         return {
           data: data,
           left: null,
           right: makeSubNode(aStr)
         };
-      } else {
+      } else if (aStr && aStr[0] <= data){
         return {
           data: data,
           right: null,
@@ -43,9 +43,10 @@ function binaryTree(str){
     }
   }
   if (len === 0){
-    return {};
+    return binTree;
   } else {
-    return makeSubNode(str);
+    binTree = makeSubNode(str)
+    return binTree;
   }
 }
 
