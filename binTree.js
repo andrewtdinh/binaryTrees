@@ -13,7 +13,7 @@
 // }
 
 function binaryTree(str){
-  // var binTree = {};
+  var binTree = {};
   // var ptr = 0;
   var len = str.length;
   str = str.split('');
@@ -26,7 +26,7 @@ function binaryTree(str){
       };
     } else {
       var data = aStr.shift();
-      console.log(aStr);
+      // console.log(aStr);
       if (aStr[0] > data){
         return {
           data: data,
