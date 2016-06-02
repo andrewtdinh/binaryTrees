@@ -2,11 +2,10 @@
 
 function binaryTree(str){
   var binTree = {};
-  // var ptr = 0;
   var len = str.length;
   str = str.split('');
   function makeSubNode(aStr){
-    if (aStr.lenth === 1) {
+    if (aStr.lenth <= 1) {
       return {
         data: aStr[0],
         left: null,
@@ -14,7 +13,7 @@ function binaryTree(str){
       };
     } else {
       var data = aStr.shift();
-      // console.log(aStr);
+      console.log(aStr);
       if (aStr && aStr[0] > data){
         return {
           data: data,
@@ -37,5 +36,5 @@ function binaryTree(str){
     return binTree;
   }
 }
-
-console.log(binaryTree('character'));
+var temp = binaryTree('character')
+console.log(temp);
